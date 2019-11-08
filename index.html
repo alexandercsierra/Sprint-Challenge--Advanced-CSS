@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
   <title>SpaceWalkers</title>
 
@@ -17,11 +18,24 @@
 <body>
 
  <!-- navigation code here -->
-
-  <div class="container home">
-
+  <div class="navDiv">
+    <div>
+      <h1>SpaceWalkers</h1>
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+      <a href="signin.html">Sign In</a>
+    </nav>
+  </div>
+ <div class="container home">
+    
     <header class="intro">
        <!-- image code here -->
+
+       <img src="/img/main-header.png" alt="Earth pictured from space">
 
       <h2>Lift Off</h2>
     
@@ -49,11 +63,11 @@
 
         <p>The Earth was small, light blue, and so touchingly alone, our home that must be defended like a holy relic. The Earth was absolutely round.</p>
       
-        <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
+        <p class="bottomPara">Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
       
-        <div class="btn">
+        <button class="btn">
           Sign Up
-        </div>
+        </button>
       </div>
       
       <div class="walk-img">
@@ -61,11 +75,25 @@
       </div>
 
     </section>
+    <section class="form hide">
+      <form action="">
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+        <div>
+        <input type="checkbox" id="check" required>
+        <label for="check">You agree to receive emails from us</label>
+      </div>
+        <button class="submitBtn">Tell me more about space!</button>
+      </form>
+    </section>
 
     <footer>
       <p>Copyright SpaceWalkers 2018</p>
     </footer>
 
   </div>
+  <script src="index.js"></script>
 </body>
 </html>

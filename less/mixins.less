@@ -1,1 +1,24 @@
 // Mixins Here
+.flexH (@j: center, @a: center){
+    display: flex;
+    justify-content: @j;
+    align-items: @a;
+}
+
+.flexV (@j: center, @a: center){
+    display: flex;
+    flex-direction: column;
+    justify-content: @j;
+    align-items: @a;
+}
+
+.signUp (@bgColor, @font-color, @width) {
+    background-color: @bgColor;
+    text-align: center;
+    width: @width;
+    padding: 2.3% 0;
+    font-size: 1.8rem;
+    color: @font-color;
+    border-radius: 5px;
+  }
+
